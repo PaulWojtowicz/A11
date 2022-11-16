@@ -45,46 +45,46 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
-/* the styles for the nav */
-nav ul {
+/* the styles for the navigation menu */
+#nav_menu ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
-nav ul li {
+#nav_menu ul li {
 	float: left;
 }
-nav ul li a {
+#nav_menu ul li a {
 	display: block;
 	width: 160px;
 	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding: 1em 0;
 	text-decoration: none;
 	background-color: #800000;
 	color: white;
 	font-weight: bold;
 }
-.current {
+#nav_menu a.current {
 	color: yellow;
 }
-nav ul ul {
+#nav_menu ul ul {
 	display: none;
 	position: absolute;
 	top: 100%;
 }
-nav ul ul li {
+#nav_menu ul ul li {
 	float: none;
 }
-ul li:hover > ul {
+#nav_menu ul li:hover > ul {
 	display: block;
 }
-ul::after {
+#nav_menu > ul::after {
 	content: "";
 	clear: both;
 	display: block;
 }
+
 /* the styles for the section */
 section {
 	width: 525px;
@@ -110,13 +110,12 @@ section blockquote {
 }
 section ul {
 	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
 }
 section li {
 	padding-bottom: .35em;
 }
-section ul {
-	list-style-type: circle;
-}
+
 /* the styles for the article */
 article {
 	padding: .5em 0;
@@ -147,6 +146,7 @@ aside h2 {
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
+
 aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
