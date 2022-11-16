@@ -8,11 +8,11 @@ html {
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 800px;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+	font-size: 100%;
+	width: 800px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
 }
 a:focus, a:hover {
 	font-style: italic;
@@ -21,14 +21,14 @@ a:focus, a:hover {
 header {
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -moz-linear-gradient(
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: -webkit-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: -o-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 header h2 {
 	font-size: 175%;
@@ -45,46 +45,46 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
-/* the styles for the navigation menu */
-#nav_menu ul {
+/* the styles for the nav */
+nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
-#nav_menu ul li {
+nav ul li {
 	float: left;
 }
-#nav_menu ul li a {
-    display: block;
-    width: 160px;
-    text-align: center;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: #800000;
-    color: white;
-    font-weight: bold;
+nav ul li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
 }
-#nav_menu a.current {
+.current {
 	color: yellow;
 }
-#nav_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
 }
-#nav_menu ul ul li {
+nav ul ul li {
 	float: none;
 }
-#nav_menu ul li:hover > ul {
+ul li:hover > ul {
 	display: block;
 }
-#nav_menu > ul::after {
-    content: "";
-    clear: both;
-    display: block;
+ul::after {
+	content: "";
+	clear: both;
+	display: block;
 }
-
 /* the styles for the section */
 section {
 	width: 525px;
@@ -110,12 +110,13 @@ section blockquote {
 }
 section ul {
 	padding: 0 0 .25em 1.25em;
-	list-style-type: circle;
 }
 section li {
 	padding-bottom: .35em;
 }
-
+section ul {
+	list-style-type: circle;
+}
 /* the styles for the article */
 article {
 	padding: .5em 0;
@@ -146,7 +147,6 @@ aside h2 {
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
-
 aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
